@@ -17,4 +17,4 @@ jobs:
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
       with:
-        files: ./reports/awesome-reports/mochawesome.html,./reports/awesome-reports/mochawesome.json
+        directory: ./reports/coverage/lcov-report
