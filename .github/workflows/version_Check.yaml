@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+    paths:
+      - 'vil/**'
+
 jobs:
   packageVersionCheck:
     runs-on: ubuntu-latest
