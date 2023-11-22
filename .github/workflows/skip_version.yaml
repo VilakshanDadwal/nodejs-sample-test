@@ -1,0 +1,16 @@
+name: Package Version Check
+
+on:
+  pull_request:
+    branches:
+    - master
+
+    paths-ignore:
+    - 'vil/**'
+
+jobs:
+  packageVersionCheck:
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: echo "Package version check skipped for changes other than ui-src and functions "
