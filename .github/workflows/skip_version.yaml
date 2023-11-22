@@ -1,12 +1,11 @@
-name: Package Version Check
+name: Skip Version check
 
 on:
   pull_request:
     branches:
-    - master
-
+      - master
     paths-ignore:
-    - 'vil/**'
+      - 'vil/**'
 
 jobs:
   packageVersionCheck:
